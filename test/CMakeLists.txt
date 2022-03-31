@@ -1,0 +1,11 @@
+add_executable(CountDownLatch_test1 CountDownLatch_test1.cc)
+target_link_libraries(CountDownLatch_test1 muduo_base)
+
+add_executable(CountDownLatch_test2 CountDownLatch_test2.cc)
+target_link_libraries(CountDownLatch_test2 muduo_base)
+
+add_executable(Deadlock_test2 Deadlock_test2.cc)
+target_link_libraries(Deadlock_test2 pthread)
+
+add_executable(Pthread_atfork_test Pthread_atfork_test.cc)
+target_link_libraries(Pthread_atfork_test pthread)
